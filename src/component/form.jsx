@@ -1,6 +1,6 @@
-import useShortUrl from "./fetchApi";
+import useShortUrl from "./FetchApi";
 import { useState, useRef } from "react";
-import ShortUrl from "./shortUrl";
+import ShortUrl from "./ShortUrl";
 
 export default function Form() {
   const [url, setUrl] = useState("");
@@ -17,7 +17,7 @@ export default function Form() {
     setUrl(event.target.value);
   };
 
-  const { user, error, isLoading } = useShortUrl(data);
+  const { user, isLoading } = useShortUrl(data);
   return (
     <>
       <form className="url-form" onSubmit={handleSubmit}>
