@@ -1,5 +1,4 @@
-import Form from "./component/form";
-import Navbar from "./component/navbar";
+import Form from "./component/Form";
 
 function App() {
   return (
@@ -7,7 +6,6 @@ function App() {
       <div className="container">
         <div className="header">Hikaru 短網址產生器</div>
         <Form />
-        <Navbar />
       </div>
     </>
   );
