@@ -1,6 +1,6 @@
-import useShortUrl from "./FetchApi";
+import useShortUrl from "./fetchApi";
 import { useState, useRef } from "react";
-import ShortUrl from "./ShortUrl";
+import ShortUrl from "./shortUrl";
 
 export default function Form() {
   const [url, setUrl] = useState("");
